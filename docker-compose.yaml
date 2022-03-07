@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    container_name: 'training-java-stream-api'
+    build: ./app
+    tty: true
+    volumes:
+      - ./app/src:/src
+    working_dir: '/src'
